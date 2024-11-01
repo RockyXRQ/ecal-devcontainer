@@ -3,8 +3,8 @@ version: '3.8'
 services:
   ecal:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
 
     # devices:
     #   - "/dev/video0:/dev/video0"
@@ -13,4 +13,3 @@ services:
       - ../..:/workspaces:cached
 
     command: sleep infinity
-    

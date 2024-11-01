@@ -4,6 +4,7 @@
     "name": "ecal",
     "dockerComposeFile": "docker-compose.yml",
     "service": "ecal",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
             "extensions": [
