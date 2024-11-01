@@ -7,9 +7,12 @@ services:
       dockerfile: .devcontainer/Dockerfile
 
     # devices:
-    #   - "/dev/video0:/dev/video0"
+    #   - /dev/video0:/dev/video0
+    #   - /dev/video1:/dev/video1
 
     volumes:
       - ../..:/workspaces:cached
 
     command: sleep infinity
+
+    privileged: true
