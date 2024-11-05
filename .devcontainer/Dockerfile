@@ -17,4 +17,7 @@ RUN apt install -y python3-ecal5
 RUN apt install -y protobuf-compiler
 RUN pip install protobuf
 
+RUN pip install opencv-python
+
 RUN apt install -y git
+RUN apt install -y v4l-utils

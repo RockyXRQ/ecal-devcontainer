@@ -1,18 +1,12 @@
-version: '3.8'
-
 services:
   ecal:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
-
-    # devices:
-    #   - /dev/video0:/dev/video0
-    #   - /dev/video1:/dev/video1
-
     volumes:
       - ../..:/workspaces:cached
-
+    devices:
+      - /dev/video0:/dev/video0
+      - /dev/video1:/dev/video1
+    # privileged: true
     command: sleep infinity
-
-    privileged: true
